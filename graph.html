@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Knowledge Catalog — Graph</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+  }
+  #app { display: flex; width: 100vw; height: 100vh; }
+  #graph {
+    flex: 1;
+    position: relative;
+    background: radial-gradient(ellipse at center, #161b22 0%, #0d1117 100%);
+  }
+  #graph canvas { display: block; }
+  #sidebar {
+    width: 340px;
+    background: #161b22;
+    border-left: 1px solid #30363d;
+    padding: 24px;
+    overflow-y: auto;
+    flex-shrink: 0;
+  }
+  #sidebar h1 {
+    font-size: 18px;
+    color: #58a6ff;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  #sidebar .subtitle {
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 20px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #8b949e;
+    margin: 6px 0;
+  }
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .stats {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #30363d;
+    font-size: 13px;
+    color: #8b949e;
+  }
+  .stats div { margin: 4px 0; }
+  .stats .num { color: #58a6ff; font-weight: 600; }
+  #info {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #30363d;
+  }
+  #info .info-title {
+    font-size: 14px;
+    color: #e3b341;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  #info .info-body {
+    font-size: 12px;
+    color: #8b949e;
+    line-height: 1.5;
+  }
+  #info a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  #info a:hover { text-decoration: underline; }
+  .controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 8px;
+  }
+  .controls button {
+    background: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .controls button:hover { background: #30363d; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="graph">
+    <canvas id="canvas"></canvas>
+    <div class="controls">
+      <button onclick="resetView()">Reset View</button>
+      <button onclick="togglePhysics()" id="physBtn">Pause Physics</button>
+    </div>
+  </div>
+  <div id="sidebar">
+    <h1>AI Knowledge Catalog</h1>
+    <div class="subtitle">o3-cloud/ai — World's Fair 2026</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#58a6ff"></div>Catalog (root)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#f0883e"></div>Event</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#bc8cff"></div>Concept</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div>Track</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#f85149"></div>Talk</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#e3b341"></div>Speaker</div>
+    <div class="stats" id="stats"></div>
+    <div id="info">
+      <div class="info-title">Click a node to inspect</div>
+      <div class="info-body">Click any node in the graph to see details here. Drag nodes to reposition. Scroll to zoom. Drag background to pan.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const GRAPH_DATA = {"nodes": [{"id": "catalog", "label": "AI Knowledge Catalog", "group": "catalog", "value": 30}, {"id": "wf2026", "label": "World's Fair 2026", "group": "event", "value": 25}, {"id": "concept-agentic-engineering", "label": "Agentic Engineering", "group": "concept", "value": 15}, {"id": "concept-context-engineering", "label": "Context Engineering", "group": "concept", "value": 15}, {"id": "concept-evaluation", "label": "Evaluation & Testing", "group": "concept", "value": 15}, {"id": "concept-software-factories", "label": "Software Factories", "group": "concept", "value": 15}, {"id": "concept-agent-memory", "label": "Agent Memory", "group": "concept", "value": 15}, {"id": "concept-personal-agents", "label": "Personal Agents", "group": "concept", "value": 15}, {"id": "concept-multimodal-ai", "label": "Multimodal AI", "group": "concept", "value": 15}, {"id": "concept-production-ai", "label": "Production AI", "group": "concept", "value": 15}, {"id": "track-ai-in-finance", "label": "AI in Finance\n(1)", "group": "track", "value": 13}, {"id": "track-ai-native-enterprises", "label": "AI-Native Enterprises\n(1)", "group": "track", "value": 13}, {"id": "track-agentic-engineering", "label": "Agentic Engineering\n(5)", "group": "track", "value": 17}, {"id": "track-autoresearch", "label": "Autoresearch\n(1)", "group": "track", "value": 13}, {"id": "track-claws-and-personal-agents", "label": "Claws & Personal Agents\n(3)", "group": "track", "value": 15}, {"id": "track-computer-use", "label": "Computer Use\n(1)", "group": "track", "value": 13}, {"id": "track-context-engineering", "label": "Context Engineering\n(3)", "group": "track", "value": 15}, {"id": "track-design-engineering", "label": "Design Engineering\n(1)", "group": "track", "value": 13}, {"id": "track-evals", "label": "Evals\n(3)", "group": "track", "value": 15}, {"id": "track-general", "label": "General\n(2)", "group": "track", "value": 14}, {"id": "track-generative-media", "label": "Generative Media\n(1)", "group": "track", "value": 13}, {"id": "track-memory-and-continual-learning", "label": "Memory & Continual Learning\n(1)", "group": "track", "value": 13}, {"id": "track-sandbox-and-platform-engineering", "label": "Sandbox & Platform Engineering\n(1)", "group": "track", "value": 13}, {"id": "track-search-and-retrieval", "label": "Search & Retrieval\n(2)", "group": "track", "value": 14}, {"id": "track-software-factories", "label": "Software Factories\n(6)", "group": "track", "value": 18}, {"id": "track-voice-and-realtime-ai", "label": "Voice & Realtime AI\n(1)", "group": "track", "value": 13}, {"id": "talk-9fubhllmsBU", "label": "Field Guide to Fable", "group": "talk", "value": 8}, {"id": "speaker-thariq-shihipar", "label": "Thariq Shihipar", "group": "speaker", "value": 6}, {"id": "talk-UNzCG3lw6O0", "label": "Building Great Agent Skills: The Missing\u2026", "group": "talk", "value": 8}, {"id": "speaker-matt-pocock", "label": "Matt Pocock", "group": "speaker", "value": 6}, {"id": "talk-ZRM_TfEZcIo", "label": "Turn 10,994 Notes Into Your Agents' Memo\u2026", "group": "talk", "value": 8}, {"id": "speaker-paul-iusztin", "label": "Paul Iusztin", "group": "speaker", "value": 6}, {"id": "talk-ZD9-4fW2HhM", "label": "Build Systems, Not Code", "group": "talk", "value": 8}, {"id": "speaker-angie-jones", "label": "Angie Jones", "group": "speaker", "value": 6}, {"id": "talk-jVjt-2g8NMY", "label": "A Genius With Amnesia", "group": "talk", "value": 8}, {"id": "speaker-victor-savkin", "label": "Victor Savkin", "group": "speaker", "value": 6}, {"id": "talk-UPwGaM2MKHY", "label": "The Log Is The Agent", "group": "talk", "value": 8}, {"id": "speaker-ishaan-sehgal", "label": "Ishaan Sehgal", "group": "speaker", "value": 6}, {"id": "talk-ij-AU9dpJjc", "label": "Stop Writing Tone Instructions. Layer Th\u2026", "group": "talk", "value": 8}, {"id": "speaker-isadora-martin-dye", "label": "Isadora Martin-Dye", "group": "speaker", "value": 6}, {"id": "talk-3hXJI2q0Jz8", "label": "Recursive Coding Agents", "group": "talk", "value": 8}, {"id": "speaker-raymond-weitekamp", "label": "Raymond Weitekamp", "group": "speaker", "value": 6}, {"id": "talk-IJXjTLPzvAU", "label": "The Miranda Hypothesis", "group": "talk", "value": 8}, {"id": "speaker-jacob-e.-thomas", "label": "Jacob E. Thomas", "group": "speaker", "value": 6}, {"id": "talk-4uFVSLgD2Q4", "label": "Agents in Production: How OpenGov Built \u2026", "group": "talk", "value": 8}, {"id": "speaker-gabe-de-mesa", "label": "Gabe De Mesa", "group": "speaker", "value": 6}, {"id": "talk-vljxQZfJ9wY", "label": "Production Evals For Agentic AI Systems", "group": "talk", "value": 8}, {"id": "speaker-nishant-gupta", "label": "Nishant Gupta", "group": "speaker", "value": 6}, {"id": "talk-whue9_YquGA", "label": "Building an Autonomous Engineering Org", "group": "talk", "value": 8}, {"id": "talk--x5GEVnkuRw", "label": "Structuring the Unstructured: Advanced D\u2026", "group": "talk", "value": 8}, {"id": "speaker-cedric-clyburn", "label": "Cedric Clyburn", "group": "speaker", "value": 6}, {"id": "talk-aHhB3sjGjkI", "label": "Agents Building Agents", "group": "talk", "value": 8}, {"id": "speaker-alfonso-graziano", "label": "Alfonso Graziano", "group": "speaker", "value": 6}, {"id": "talk-vh2VGuQ3zhY", "label": "The 100-Tool Agent Is a Trap", "group": "talk", "value": 8}, {"id": "speaker-sohail-shaikh-and-ankush-rastogi", "label": "Sohail Shaikh & Ankush Rastogi", "group": "speaker", "value": 6}, {"id": "talk-IddXPepIAS4", "label": "Using Spec-Driven Development for Produc\u2026", "group": "talk", "value": 8}, {"id": "speaker-erik-hanchett", "label": "Erik Hanchett", "group": "speaker", "value": 6}, {"id": "talk-OXMMN-XbxwA", "label": "Research to Reality: Bringing frontier M\u2026", "group": "talk", "value": 8}, {"id": "speaker-vaidas-razgaitis", "label": "Vaidas Razgaitis", "group": "speaker", "value": 6}, {"id": "talk-JRTAtZ5iBkU", "label": "HTML is All You Need (for Agents to Make\u2026", "group": "talk", "value": 8}, {"id": "speaker-amol-kapoor", "label": "Amol Kapoor", "group": "speaker", "value": 6}, {"id": "talk-akk6KRlcwW4", "label": "OpenClaw in Your Hand: Building a Physic\u2026", "group": "talk", "value": 8}, {"id": "speaker-lech-kalinowski", "label": "Lech Kalinowski", "group": "speaker", "value": 6}, {"id": "talk-Akm1sqvWG4A", "label": "Bypassing the Multimodal Tax", "group": "talk", "value": 8}, {"id": "speaker-abed-matini", "label": "Abed Matini", "group": "speaker", "value": 6}, {"id": "talk-XovaGv4f39A", "label": "When all context matters: Extended Cache\u2026", "group": "talk", "value": 8}, {"id": "speaker-luis-romero-sevilla", "label": "Luis Romero-Sevilla", "group": "speaker", "value": 6}, {"id": "talk-T0HhO4YtTfE", "label": "AI System Design: From Idea to Productio\u2026", "group": "talk", "value": 8}, {"id": "speaker-apoorva-joshi", "label": "Apoorva Joshi", "group": "speaker", "value": 6}, {"id": "talk-uiP88SpCi1Q", "label": "Your Agent Is Wasting Tokens and You Don\u2026", "group": "talk", "value": 8}, {"id": "talk-dRmWYHuIJxM", "label": "We Cut 94% of Our AI Coding Tokens With \u2026", "group": "talk", "value": 8}, {"id": "speaker-rajkumar-sakthivel", "label": "Rajkumar Sakthivel", "group": "speaker", "value": 6}, {"id": "talk-Iwe_RY-fYgI", "label": "AI-Driven Multi-Document Correlation for\u2026", "group": "talk", "value": 8}, {"id": "speaker-varsha-shah", "label": "Varsha Shah", "group": "speaker", "value": 6}, {"id": "talk-65X0pQ6Lmbg", "label": "Voice In, Visuals Out: The Agony and the\u2026", "group": "talk", "value": 8}, {"id": "speaker-allen-pike", "label": "Allen Pike", "group": "speaker", "value": 6}, {"id": "talk-Lc8zRh9muoY", "label": "Your Agent Failed in Prod. Good Luck Rep\u2026", "group": "talk", "value": 8}, {"id": "speaker-tisha-chawla-and-susheem-koul", "label": "Tisha Chawla & Susheem Koul", "group": "speaker", "value": 6}, {"id": "talk-6bmM45jkMDY", "label": "You Can't Prompt the Room", "group": "talk", "value": 8}, {"id": "speaker-bal\u00e1zs-horv\u00e1th", "label": "Bal\u00e1zs Horv\u00e1th", "group": "speaker", "value": 6}, {"id": "talk-APh1Vx0oLmQ", "label": "Building Deterministic Infrastructure fo\u2026", "group": "talk", "value": 8}, {"id": "talk-pSto5YaNGUo", "label": "The Agentic AI Engineer", "group": "talk", "value": 8}, {"id": "speaker-benedikt-sanftl", "label": "Benedikt Sanftl", "group": "speaker", "value": 6}, {"id": "talk-DqtmZE6Hl0g", "label": "The Prompt is the Platform", "group": "talk", "value": 8}, {"id": "speaker-dominik", "label": "Dominik", "group": "speaker", "value": 6}, {"id": "talk-Jx4ZFEAq6bY", "label": "User Signal Die at the Retrieval Boundar\u2026", "group": "talk", "value": 8}, {"id": "speaker-sonam-pankaj", "label": "Sonam Pankaj", "group": "speaker", "value": 6}, {"id": "talk-JnubYCYunk8", "label": "Browser Agents Don't Need Better Models.\u2026", "group": "talk", "value": 8}, {"id": "speaker-kushan-raj", "label": "Kushan Raj", "group": "speaker", "value": 6}], "edges": [{"from": "catalog", "to": "wf2026"}, {"from": "catalog", "to": "concept-agentic-engineering"}, {"from": "catalog", "to": "concept-context-engineering"}, {"from": "catalog", "to": "concept-evaluation"}, {"from": "catalog", "to": "concept-software-factories"}, {"from": "catalog", "to": "concept-agent-memory"}, {"from": "catalog", "to": "concept-personal-agents"}, {"from": "catalog", "to": "concept-multimodal-ai"}, {"from": "catalog", "to": "concept-production-ai"}, {"from": "wf2026", "to": "track-ai-in-finance"}, {"from": "wf2026", "to": "track-ai-native-enterprises"}, {"from": "wf2026", "to": "track-agentic-engineering"}, {"from": "wf2026", "to": "track-autoresearch"}, {"from": "wf2026", "to": "track-claws-and-personal-agents"}, {"from": "wf2026", "to": "track-computer-use"}, {"from": "wf2026", "to": "track-context-engineering"}, {"from": "wf2026", "to": "track-design-engineering"}, {"from": "wf2026", "to": "track-evals"}, {"from": "wf2026", "to": "track-general"}, {"from": "wf2026", "to": "track-generative-media"}, {"from": "wf2026", "to": "track-memory-and-continual-learning"}, {"from": "wf2026", "to": "track-sandbox-and-platform-engineering"}, {"from": "wf2026", "to": "track-search-and-retrieval"}, {"from": "wf2026", "to": "track-software-factories"}, {"from": "wf2026", "to": "track-voice-and-realtime-ai"}, {"from": "track-claws-and-personal-agents", "to": "talk-9fubhllmsBU"}, {"from": "talk-9fubhllmsBU", "to": "speaker-thariq-shihipar"}, {"from": "track-software-factories", "to": "talk-UNzCG3lw6O0"}, {"from": "talk-UNzCG3lw6O0", "to": "speaker-matt-pocock"}, {"from": "track-memory-and-continual-learning", "to": "talk-ZRM_TfEZcIo"}, {"from": "talk-ZRM_TfEZcIo", "to": "speaker-paul-iusztin"}, {"from": "track-software-factories", "to": "talk-ZD9-4fW2HhM"}, {"from": "talk-ZD9-4fW2HhM", "to": "speaker-angie-jones"}, {"from": "track-claws-and-personal-agents", "to": "talk-jVjt-2g8NMY"}, {"from": "talk-jVjt-2g8NMY", "to": "speaker-victor-savkin"}, {"from": "track-agentic-engineering", "to": "talk-UPwGaM2MKHY"}, {"from": "talk-UPwGaM2MKHY", "to": "speaker-ishaan-sehgal"}, {"from": "track-general", "to": "talk-ij-AU9dpJjc"}, {"from": "talk-ij-AU9dpJjc", "to": "speaker-isadora-martin-dye"}, {"from": "track-agentic-engineering", "to": "talk-3hXJI2q0Jz8"}, {"from": "talk-3hXJI2q0Jz8", "to": "speaker-raymond-weitekamp"}, {"from": "track-evals", "to": "talk-IJXjTLPzvAU"}, {"from": "talk-IJXjTLPzvAU", "to": "speaker-jacob-e.-thomas"}, {"from": "track-ai-native-enterprises", "to": "talk-4uFVSLgD2Q4"}, {"from": "talk-4uFVSLgD2Q4", "to": "speaker-gabe-de-mesa"}, {"from": "track-evals", "to": "talk-vljxQZfJ9wY"}, {"from": "talk-vljxQZfJ9wY", "to": "speaker-nishant-gupta"}, {"from": "track-software-factories", "to": "talk-whue9_YquGA"}, {"from": "talk-whue9_YquGA", "to": "speaker-angie-jones"}, {"from": "track-software-factories", "to": "talk--x5GEVnkuRw"}, {"from": "talk--x5GEVnkuRw", "to": "speaker-cedric-clyburn"}, {"from": "track-agentic-engineering", "to": "talk-aHhB3sjGjkI"}, {"from": "talk-aHhB3sjGjkI", "to": "speaker-alfonso-graziano"}, {"from": "track-agentic-engineering", "to": "talk-vh2VGuQ3zhY"}, {"from": "talk-vh2VGuQ3zhY", "to": "speaker-sohail-shaikh-and-ankush-rastogi"}, {"from": "track-software-factories", "to": "talk-IddXPepIAS4"}, {"from": "talk-IddXPepIAS4", "to": "speaker-erik-hanchett"}, {"from": "track-search-and-retrieval", "to": "talk-OXMMN-XbxwA"}, {"from": "talk-OXMMN-XbxwA", "to": "speaker-vaidas-razgaitis"}, {"from": "track-generative-media", "to": "talk-JRTAtZ5iBkU"}, {"from": "talk-JRTAtZ5iBkU", "to": "speaker-amol-kapoor"}, {"from": "track-claws-and-personal-agents", "to": "talk-akk6KRlcwW4"}, {"from": "talk-akk6KRlcwW4", "to": "speaker-lech-kalinowski"}, {"from": "track-general", "to": "talk-Akm1sqvWG4A"}, {"from": "talk-Akm1sqvWG4A", "to": "speaker-abed-matini"}, {"from": "track-context-engineering", "to": "talk-XovaGv4f39A"}, {"from": "talk-XovaGv4f39A", "to": "speaker-luis-romero-sevilla"}, {"from": "track-design-engineering", "to": "talk-T0HhO4YtTfE"}, {"from": "talk-T0HhO4YtTfE", "to": "speaker-apoorva-joshi"}, {"from": "track-software-factories", "to": "talk-uiP88SpCi1Q"}, {"from": "talk-uiP88SpCi1Q", "to": "speaker-erik-hanchett"}, {"from": "track-context-engineering", "to": "talk-dRmWYHuIJxM"}, {"from": "talk-dRmWYHuIJxM", "to": "speaker-rajkumar-sakthivel"}, {"from": "track-ai-in-finance", "to": "talk-Iwe_RY-fYgI"}, {"from": "talk-Iwe_RY-fYgI", "to": "speaker-varsha-shah"}, {"from": "track-voice-and-realtime-ai", "to": "talk-65X0pQ6Lmbg"}, {"from": "talk-65X0pQ6Lmbg", "to": "speaker-allen-pike"}, {"from": "track-agentic-engineering", "to": "talk-Lc8zRh9muoY"}, {"from": "talk-Lc8zRh9muoY", "to": "speaker-tisha-chawla-and-susheem-koul"}, {"from": "track-context-engineering", "to": "talk-6bmM45jkMDY"}, {"from": "talk-6bmM45jkMDY", "to": "speaker-bal\u00e1zs-horv\u00e1th"}, {"from": "track-evals", "to": "talk-APh1Vx0oLmQ"}, {"from": "talk-APh1Vx0oLmQ", "to": "speaker-nishant-gupta"}, {"from": "track-autoresearch", "to": "talk-pSto5YaNGUo"}, {"from": "talk-pSto5YaNGUo", "to": "speaker-benedikt-sanftl"}, {"from": "track-sandbox-and-platform-engineering", "to": "talk-DqtmZE6Hl0g"}, {"from": "talk-DqtmZE6Hl0g", "to": "speaker-dominik"}, {"from": "track-search-and-retrieval", "to": "talk-Jx4ZFEAq6bY"}, {"from": "talk-Jx4ZFEAq6bY", "to": "speaker-sonam-pankaj"}, {"from": "track-computer-use", "to": "talk-JnubYCYunk8"}, {"from": "talk-JnubYCYunk8", "to": "speaker-kushan-raj"}, {"from": "concept-personal-agents", "to": "talk-9fubhllmsBU"}, {"from": "concept-software-factories", "to": "talk-UNzCG3lw6O0"}, {"from": "concept-agent-memory", "to": "talk-ZRM_TfEZcIo"}, {"from": "concept-software-factories", "to": "talk-ZD9-4fW2HhM"}, {"from": "concept-agent-memory", "to": "talk-jVjt-2g8NMY"}, {"from": "concept-personal-agents", "to": "talk-jVjt-2g8NMY"}, {"from": "concept-agent-memory", "to": "talk-UPwGaM2MKHY"}, {"from": "concept-agentic-engineering", "to": "talk-3hXJI2q0Jz8"}, {"from": "concept-production-ai", "to": "talk-4uFVSLgD2Q4"}, {"from": "concept-evaluation", "to": "talk-vljxQZfJ9wY"}, {"from": "concept-agentic-engineering", "to": "talk-whue9_YquGA"}, {"from": "concept-software-factories", "to": "talk--x5GEVnkuRw"}, {"from": "concept-agentic-engineering", "to": "talk-aHhB3sjGjkI"}, {"from": "concept-agentic-engineering", "to": "talk-vh2VGuQ3zhY"}, {"from": "concept-software-factories", "to": "talk-IddXPepIAS4"}, {"from": "concept-software-factories", "to": "talk-OXMMN-XbxwA"}, {"from": "concept-multimodal-ai", "to": "talk-JRTAtZ5iBkU"}, {"from": "concept-personal-agents", "to": "talk-akk6KRlcwW4"}, {"from": "concept-context-engineering", "to": "talk-Akm1sqvWG4A"}, {"from": "concept-multimodal-ai", "to": "talk-Akm1sqvWG4A"}, {"from": "concept-context-engineering", "to": "talk-XovaGv4f39A"}, {"from": "concept-software-factories", "to": "talk-T0HhO4YtTfE"}, {"from": "concept-context-engineering", "to": "talk-uiP88SpCi1Q"}, {"from": "concept-multimodal-ai", "to": "talk-65X0pQ6Lmbg"}, {"from": "concept-evaluation", "to": "talk-Lc8zRh9muoY"}, {"from": "concept-evaluation", "to": "talk-APh1Vx0oLmQ"}, {"from": "concept-agentic-engineering", "to": "talk-pSto5YaNGUo"}, {"from": "concept-context-engineering", "to": "talk-DqtmZE6Hl0g"}, {"from": "concept-context-engineering", "to": "talk-Jx4ZFEAq6bY"}, {"from": "concept-multimodal-ai", "to": "talk-JnubYCYunk8"}]};
+
+const COLORS = {
+  catalog:  '#58a6ff',
+  event:    '#f0883e',
+  concept:  '#bc8cff',
+  track:    '#3fb950',
+  talk:     '#f85149',
+  speaker:  '#e3b341',
+};
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const graphEl = document.getElementById('graph');
+
+let W, H;
+function resize() {
+  W = graphEl.clientWidth;
+  H = graphEl.clientHeight;
+  canvas.width = W * devicePixelRatio;
+  canvas.height = H * devicePixelRatio;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Node lookup
+const nodeMap = new Map();
+GRAPH_DATA.nodes.forEach(n => {
+  n.x = W/2 + (Math.random() - 0.5) * 400;
+  n.y = H/2 + (Math.random() - 0.5) * 400;
+  n.vx = 0;
+  n.vy = 0;
+  n.r = n.value || 8;
+  nodeMap.set(n.id, n);
+});
+
+// Track connections for force layout
+const edges = GRAPH_DATA.edges;
+
+// --- Physics ---
+let physicsOn = true;
+
+function tick() {
+  if (!physicsOn) { draw(); requestAnimationFrame(tick); return; }
+
+  // Repulsion between all nodes
+  for (let i = 0; i < GRAPH_DATA.nodes.length; i++) {
+    const a = GRAPH_DATA.nodes[i];
+    for (let j = i + 1; j < GRAPH_DATA.nodes.length; j++) {
+      const b = GRAPH_DATA.nodes[j];
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const dist2 = dx*dx + dy*dy || 1;
+      const dist = Math.sqrt(dist2);
+      const force = (a.r * b.r) / dist2 * 30;
+      const fx = (dx / dist) * force;
+      const fy = (dy / dist) * force;
+      a.vx -= fx; a.vy -= fy;
+      b.vx += fx; b.vy += fy;
+    }
+  }
+
+  // Spring attraction along edges
+  edges.forEach(e => {
+    const a = nodeMap.get(e.from);
+    const b = nodeMap.get(e.to);
+    if (!a || !b) return;
+    const dx = b.x - a.x;
+    const dy = b.y - a.y;
+    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+    const targetDist = 60 + (a.r + b.r) * 3;
+    const force = (dist - targetDist) * 0.01;
+    const fx = (dx / dist) * force;
+    const fy = (dy / dist) * force;
+    a.vx += fx; a.vy += fy;
+    b.vx -= fx; b.vy -= fy;
+  });
+
+  // Center gravity
+  GRAPH_DATA.nodes.forEach(n => {
+    n.vx += (W/2 - n.x) * 0.0005;
+    n.vy += (H/2 - n.y) * 0.0005;
+  });
+
+  // Damping & integrate
+  GRAPH_DATA.nodes.forEach(n => {
+    n.vx *= 0.82;
+    n.vy *= 0.82;
+    if (!n.fixed) {
+      n.x += n.vx;
+      n.y += n.vy;
+    }
+    // Keep in bounds
+    n.x = Math.max(n.r, Math.min(W - n.r, n.x));
+    n.y = Math.max(n.r, Math.min(H - n.r, n.y));
+  });
+
+  draw();
+  requestAnimationFrame(tick);
+}
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+
+  // Edges
+  ctx.lineWidth = 0.5;
+  edges.forEach(e => {
+    const a = nodeMap.get(e.from);
+    const b = nodeMap.get(e.to);
+    if (!a || !b) return;
+    const ga = COLORS[a.group] || '#666';
+    const gb = COLORS[b.group] || '#666';
+    const grad = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
+    grad.addColorStop(0, ga + '60');
+    grad.addColorStop(1, gb + '60');
+    ctx.strokeStyle = grad;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.stroke();
+  });
+
+  // Nodes
+  GRAPH_DATA.nodes.forEach(n => {
+    const color = COLORS[n.group] || '#666';
+
+    // Glow
+    ctx.shadowColor = color;
+    ctx.shadowBlur = n === hoveredNode ? 20 : 8;
+
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+    ctx.fillStyle = color + 'dd';
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    // Border
+    ctx.strokeStyle = n === selectedNode ? '#fff' : color;
+    ctx.lineWidth = n === selectedNode ? 2 : 1;
+    ctx.stroke();
+
+    // Label (only for larger nodes or hovered)
+    if (n.r >= 12 || n === hoveredNode || n === selectedNode) {
+      ctx.font = `${Math.min(n.r, 11)}px -apple-system, sans-serif`;
+      ctx.fillStyle = '#c9d1d9';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      const label = n.label.length > 30 ? n.label.slice(0, 28) + '…' : n.label;
+      ctx.fillText(label, n.x, n.y + n.r + 10);
+    }
+  });
+}
+
+// --- Interaction ---
+let hoveredNode = null;
+let selectedNode = null;
+let dragging = null;
+let panning = false;
+let panX = 0, panY = 0;
+let mouseX = 0, mouseY = 0;
+
+function getNodeAt(x, y) {
+  for (let n of GRAPH_DATA.nodes) {
+    const dx = x - n.x;
+    const dy = y - n.y;
+    if (dx*dx + dy*dy < n.r * n.r) return n;
+  }
+  return null;
+}
+
+canvas.addEventListener('mousemove', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  if (dragging) {
+    dragging.x = x;
+    dragging.y = y;
+    dragging.vx = 0;
+    dragging.vy = 0;
+    return;
+  }
+
+  hoveredNode = getNodeAt(x, y);
+  canvas.style.cursor = hoveredNode ? 'pointer' : 'default';
+});
+
+canvas.addEventListener('mousedown', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  const node = getNodeAt(x, y);
+  if (node) {
+    dragging = node;
+    node.fixed = true;
+  }
+});
+
+canvas.addEventListener('mouseup', (e) => {
+  if (dragging) {
+    dragging.fixed = false;
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const node = getNodeAt(x, y);
+    if (node === dragging) {
+      selectedNode = node;
+      showInfo(node);
+    }
+    dragging = null;
+  }
+});
+
+canvas.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const scale = e.deltaY > 0 ? 0.9 : 1.1;
+  GRAPH_DATA.nodes.forEach(n => {
+    n.x = W/2 + (n.x - W/2) * scale;
+    n.y = H/2 + (n.y - H/2) * scale;
+    n.r = Math.max(4, Math.min(40, n.r * scale));
+  });
+});
+
+function showInfo(node) {
+  const info = document.getElementById('info');
+  const groupColors = {
+    catalog: 'Catalog Root',
+    event: 'Event',
+    concept: 'Concept',
+    track: 'Track',
+    talk: 'Talk',
+    speaker: 'Speaker',
+  };
+  const connections = edges.filter(e => e.from === node.id || e.to === node.id);
+  const connectedNames = connections.map(e => {
+    const otherId = e.from === node.id ? e.to : e.from;
+    const other = nodeMap.get(otherId);
+    return other ? other.label : '';
+  }).filter(Boolean);
+
+  info.innerHTML = `
+    <div class="info-title">${node.label}</div>
+    <div class="info-body">
+      <strong>Type:</strong> ${groupColors[node.group] || node.group}<br>
+      <strong>Connections:</strong> ${connections.length}<br>
+      ${connectedNames.length > 0 ? `<strong>Linked to:</strong><br>${connectedNames.slice(0, 10).map(n => '• ' + n).join('<br>')}${connectedNames.length > 10 ? '<br>…and ' + (connectedNames.length - 10) + ' more' : ''}` : ''}
+    </div>
+  `;
+}
+
+function resetView() {
+  GRAPH_DATA.nodes.forEach(n => {
+    n.x = W/2 + (Math.random() - 0.5) * 400;
+    n.y = H/2 + (Math.random() - 0.5) * 400;
+    n.vx = 0;
+    n.vy = 0;
+    n.r = n.value || 8;
+  });
+}
+
+function togglePhysics() {
+  physicsOn = !physicsOn;
+  document.getElementById('physBtn').textContent = physicsOn ? 'Pause Physics' : 'Resume Physics';
+}
+
+// Stats
+const groupCounts = {};
+GRAPH_DATA.nodes.forEach(n => { groupCounts[n.group] = (groupCounts[n.group] || 0) + 1; });
+const statsEl = document.getElementById('stats');
+statsEl.innerHTML = `
+  <div><span class="num">${GRAPH_DATA.nodes.length}</span> nodes</div>
+  <div><span class="num">${edges.length}</span> edges</div>
+  <div style="margin-top:8px"><span class="num">${groupCounts.talk || 0}</span> talks</div>
+  <div><span class="num">${groupCounts.speaker || 0}</span> speakers</div>
+  <div><span class="num">${groupCounts.track || 0}</span> tracks</div>
+  <div><span class="num">${groupCounts.concept || 0}</span> concepts</div>
+`;
+
+// Start
+tick();
+</script>
+</body>
+</html>
