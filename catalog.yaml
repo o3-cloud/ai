@@ -1,0 +1,31 @@
+# AI Knowledge Catalog Manifest
+# Follows OKF v0.1 specification
+
+scope: o3-cloud.ai.catalog
+
+metadata:
+  created: 2026-07-08T00:00:00+00:00
+  event: AI Engineer World's Fair 2026
+  event_dates: 2026-06-29 to 2026-07-02
+  event_location: Moscone West, San Francisco, CA
+  source: https://ai.engineer/worldsfair/2026
+  youtube: https://youtube.com/@aiDotEngineer
+
+snapshot:
+  entries:
+    - talk
+    - speaker
+    - track
+    - concept
+    - reference
+  aspects:
+    - overview
+    - transcript
+    - summary
+    - key_points
+
+publishing:
+  aspects:
+    - overview
+    - summary
+    - key_points

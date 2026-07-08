@@ -1,0 +1,26 @@
+# Talks Pending Transcripts
+
+The following talks from AI Engineer World's Fair 2026 do not yet have
+transcripts available. Some videos are still premiering or private.
+
+* The Golden Age of AI Engineering — Alexander Embiricos & Romain Huet & Peter Steinberger, OpenAI
+  - Status: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pMggiOb18tc! This is most likely caused by:
+
+The video is unplayable for the following reason: Premieres in 24 hours
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+* Turbocharge Your Agent's Retrieval with TurboQuant — Shashi Jagtap, Superagentic AI
+  - Status: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=tB9RKTrU-Ig! This is most likely caused by:
+
+The video is unplayable for the following reason: This video is private
+
+Additional Details:
+ - If the owner of this video has granted you access, please 
+ - sign in
+ - .
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+* Using RL-based Agent to Detect and Remediate ETL Pipeline Failures — Anna Marie Benzon
+  - Status: No transcript found
