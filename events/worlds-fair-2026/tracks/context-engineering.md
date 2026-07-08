@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Context Engineering
 description: Context management, prompt engineering, and context window optimization

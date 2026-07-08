@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Thariq Shihipar
 company: Anthropic

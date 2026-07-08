@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Concept
 title: Agent Memory & Continual Learning
 description: Persistent context, agent memory systems, and continual learning

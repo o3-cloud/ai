@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "You Can't Prompt the Room"
 speaker: Balázs Horváth

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Your Agent Is Wasting Tokens and You Don't Know It"
 speaker: Erik Hanchett

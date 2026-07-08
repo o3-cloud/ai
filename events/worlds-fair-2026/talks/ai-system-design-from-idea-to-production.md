@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "AI System Design: From Idea to Production"
 speaker: Apoorva Joshi

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Talks
 
 All cataloged talks from AI Engineer World's Fair 2026 with full transcripts.

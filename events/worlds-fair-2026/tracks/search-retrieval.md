@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Search & Retrieval
 description: RAG, retrieval strategies, and search infrastructure

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Event
 title: AI Engineer World'''s Fair 2026
 description: The largest technical AI conference in the world, with 29 tracks, 300 speakers, 100 expo partners, 6,000+ AI Engineers.

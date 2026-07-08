@@ -1,0 +1,59 @@
+title: AI Knowledge Catalog
+description: >-
+  An open knowledge catalog of AI engineering resources from AI Engineer events,
+  built following the Open Knowledge Format (OKF) specification.
+url: "https://othree.cloud"
+baseurl: "/ai"
+
+# Build settings — use jekyll with default theme
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Process ALL files (not just posts)
+include:
+  - events
+  - concepts
+
+# Exclude non-content files
+exclude:
+  - ".gitignore"
+  - "CONTRIBUTING.md"
+  - "LICENSE.md"
+  - "catalog.yaml"
+  - "graph.html"
+  - "catalog-graph.png"
+  - "SPEC.md"
+  - "node_modules/"
+  - "vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: World's Fair 2026
+    url: /events/worlds-fair-2026/
+  - title: Concepts
+    url: /concepts/
+  - title: Talks
+    url: /events/worlds-fair-2026/talks/
+  - title: Speakers
+    url: /events/worlds-fair-2026/speakers/
+  - title: GitHub
+    url: https://github.com/o3-cloud/ai

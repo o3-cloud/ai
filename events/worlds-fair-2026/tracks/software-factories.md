@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Software Factories
 description: AI-assisted development pipelines, coding agents, and build systems

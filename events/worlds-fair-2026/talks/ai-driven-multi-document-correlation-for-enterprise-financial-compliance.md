@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "AI-Driven Multi-Document Correlation for Enterprise Financial Compliance"
 speaker: Varsha Shah

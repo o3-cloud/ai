@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Agents in Production: How OpenGov Built and Scaled OG Assist"
 speaker: Gabe De Mesa

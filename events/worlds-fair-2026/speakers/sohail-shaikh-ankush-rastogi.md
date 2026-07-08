@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Sohail Shaikh & Ankush Rastogi
 company: Prosodica

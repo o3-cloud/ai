@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Stop Writing Tone Instructions. Layer Them."
 speaker: Isadora Martin-Dye

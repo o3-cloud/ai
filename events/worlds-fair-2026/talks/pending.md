@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Talks Pending Transcripts
 
 The following talks from AI Engineer World's Fair 2026 do not yet have

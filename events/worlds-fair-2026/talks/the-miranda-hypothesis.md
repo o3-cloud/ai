@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "The Miranda Hypothesis"
 speaker: Jacob E. Thomas

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Structuring the Unstructured: Advanced Document Parsing for AI Workflows"
 speaker: Cedric Clyburn

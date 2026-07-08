@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Build Systems, Not Code"
 speaker: Angie Jones

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Memory & Continual Learning
 description: Agent memory, continual learning, and persistent context

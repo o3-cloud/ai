@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Building an Autonomous Engineering Org"
 speaker: Angie Jones

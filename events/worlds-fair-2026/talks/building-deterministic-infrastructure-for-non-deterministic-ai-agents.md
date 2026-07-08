@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Building Deterministic Infrastructure for Non-Deterministic AI Agents"
 speaker: Nishant Gupta

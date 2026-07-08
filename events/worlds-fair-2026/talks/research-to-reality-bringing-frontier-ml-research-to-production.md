@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Research to Reality: Bringing frontier ML research to production"
 speaker: Vaidas Razgaitis

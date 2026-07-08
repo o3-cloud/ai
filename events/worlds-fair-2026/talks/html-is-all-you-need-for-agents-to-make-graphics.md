@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "HTML is All You Need (for Agents to Make Graphics)"
 speaker: Amol Kapoor

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  {% if page.type == 'Talk' and page.resource %}
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.resource }}">
+  {% endif %}
+</head>
+<body>
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">🧠 {{ site.title }}</a>
+      <div class="nav-links">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/events/worlds-fair-2026/' | relative_url }}">World's Fair 2026</a>
+        <a href="{{ '/concepts/' | relative_url }}">Concepts</a>
+        <a href="{{ '/talks/' | relative_url }}">Talks</a>
+        <a href="https://github.com/o3-cloud/ai" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        <a href="https://github.com/o3-cloud/ai">o3-cloud/ai</a> ·
+        Built with <a href="https://pages.github.com">GitHub Pages</a> ·
+        Based on the <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog">Open Knowledge Format</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

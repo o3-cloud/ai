@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Recursive Coding Agents"
 speaker: Raymond Weitekamp

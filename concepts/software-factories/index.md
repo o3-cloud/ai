@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Concept
 title: Software Factories
 description: AI-assisted development, coding agents, and build systems

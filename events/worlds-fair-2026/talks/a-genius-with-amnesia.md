@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "A Genius With Amnesia"
 speaker: Victor Savkin

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Browser Agents Don't Need Better Models. They Need Better Eyes."
 speaker: Kushan Raj

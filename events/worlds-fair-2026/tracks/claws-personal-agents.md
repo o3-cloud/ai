@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Claws & Personal Agents
 description: Personal AI agents, on-device assistants, and agent UX

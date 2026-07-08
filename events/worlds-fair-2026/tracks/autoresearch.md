@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Autoresearch
 description: Automated research, ML research to production

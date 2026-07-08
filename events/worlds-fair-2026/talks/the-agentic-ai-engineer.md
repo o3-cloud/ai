@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "The Agentic AI Engineer"
 speaker: Benedikt Sanftl

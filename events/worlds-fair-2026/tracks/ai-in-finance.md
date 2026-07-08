@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: AI in Finance
 description: AI applications in financial services

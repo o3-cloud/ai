@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Evals
 description: Evaluation, testing, and observability for AI systems

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Your Agent Failed in Prod. Good Luck Reproducing It."
 speaker: Tisha Chawla & Susheem Koul

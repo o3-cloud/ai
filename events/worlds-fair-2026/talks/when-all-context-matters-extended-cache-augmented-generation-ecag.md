@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "When all context matters: Extended Cache Augmented Generation (ECAG)"
 speaker: Luis Romero-Sevilla

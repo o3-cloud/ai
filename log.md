@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Catalog Update Log
 
 ## 2026-07-08

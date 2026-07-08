@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Sonam Pankaj
 company: StarlightSearch Inc

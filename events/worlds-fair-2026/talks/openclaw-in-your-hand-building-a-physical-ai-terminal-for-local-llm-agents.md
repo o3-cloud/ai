@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "OpenClaw in Your Hand: Building a Physical AI Terminal for Local LLM Agents"
 speaker: Lech Kalinowski

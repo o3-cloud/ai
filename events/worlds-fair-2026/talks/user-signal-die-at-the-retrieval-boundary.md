@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "User Signal Die at the Retrieval Boundary"
 speaker: Sonam Pankaj

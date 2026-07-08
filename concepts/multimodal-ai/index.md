@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Concept
 title: Multimodal AI
 description: Vision, voice, browser agents, and multimodal AI systems

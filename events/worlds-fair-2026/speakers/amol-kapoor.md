@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Amol Kapoor
 company: Nori

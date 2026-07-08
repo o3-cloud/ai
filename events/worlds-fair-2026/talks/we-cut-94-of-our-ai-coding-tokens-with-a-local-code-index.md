@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "We Cut 94% of Our AI Coding Tokens With a Local Code Index"
 speaker: Rajkumar Sakthivel

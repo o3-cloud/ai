@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Erik Hanchett
 company: AWS

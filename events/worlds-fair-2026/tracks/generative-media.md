@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Generative Media
 description: Generative AI for media, images, and creative content

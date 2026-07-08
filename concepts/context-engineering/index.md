@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Concept
 title: Context Engineering
 description: Context management, RAG, retrieval strategies, and context window optimization

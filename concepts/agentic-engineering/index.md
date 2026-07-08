@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Concept
 title: Agentic Engineering
 description: Agent architectures, autonomous systems, and agentic workflows

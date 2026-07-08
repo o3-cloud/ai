@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Building Great Agent Skills: The Missing Manual"
 speaker: Matt Pocock

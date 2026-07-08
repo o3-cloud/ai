@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Using Spec-Driven Development for Production Workflows"
 speaker: Erik Hanchett

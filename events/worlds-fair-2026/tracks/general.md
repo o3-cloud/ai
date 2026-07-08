@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: General
 description: Talks spanning multiple tracks

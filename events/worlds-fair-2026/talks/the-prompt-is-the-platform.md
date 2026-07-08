@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "The Prompt is the Platform"
 speaker: Dominik

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Turn 10,994 Notes Into Your Agents' Memory"
 speaker: Paul Iusztin

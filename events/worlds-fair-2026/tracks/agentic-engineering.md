@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Agentic Engineering
 description: Agent architectures, multi-agent systems, and agentic workflows

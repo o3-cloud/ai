@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "The 100-Tool Agent Is a Trap"
 speaker: Sohail Shaikh & Ankush Rastogi

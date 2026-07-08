@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Concept
 title: Production AI Systems
 description: Deploying AI in production, infrastructure, and enterprise applications

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Voice & Realtime AI
 description: Voice interfaces, real-time AI, and multimodal interaction

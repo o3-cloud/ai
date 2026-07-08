@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Concept
 title: Personal Agents & Claws
 description: On-device AI assistants, personal agents, and local LLM terminals

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Design Engineering
 description: AI-assisted design, generative UI, and design systems

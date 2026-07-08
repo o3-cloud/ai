@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Field Guide to Fable"
 speaker: Thariq Shihipar

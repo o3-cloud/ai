@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Tracks
 
 Tracks from AI Engineer World's Fair 2026 with cataloged talks.

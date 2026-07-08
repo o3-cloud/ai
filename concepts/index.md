@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Concepts
 
 Cross-event AI engineering concepts, with links to related talks.

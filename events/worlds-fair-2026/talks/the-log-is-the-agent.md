@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "The Log Is The Agent"
 speaker: Ishaan Sehgal

@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Agents Building Agents"
 speaker: Alfonso Graziano

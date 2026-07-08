@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Voice In, Visuals Out: The Agony and the Ecstasy"
 speaker: Allen Pike

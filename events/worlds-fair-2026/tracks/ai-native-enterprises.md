@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: AI-Native Enterprises
 description: Building AI-native organizations and processes

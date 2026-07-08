@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Talk
 title: "Bypassing the Multimodal Tax"
 speaker: Abed Matini

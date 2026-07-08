@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Luis Romero-Sevilla
 company: Orbis Operations

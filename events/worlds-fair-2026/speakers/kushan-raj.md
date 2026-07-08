@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Kushan Raj
 company: ARK

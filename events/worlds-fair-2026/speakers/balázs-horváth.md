@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Speaker
 title: Balázs Horváth
 company: VisualLabs

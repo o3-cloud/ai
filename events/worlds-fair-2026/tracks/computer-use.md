@@ -1,4 +1,5 @@
 ---
+layout: default
 type: Track
 title: Computer Use
 description: Computer-using agents, GUI automation, and browser agents
