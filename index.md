@@ -32,7 +32,7 @@ description: An open knowledge catalog of AI engineering resources from AI Engin
 
 ## Format
 
-This catalog follows the [Open Knowledge Format (OKF) v0.1](https://github.com/o3-cloud/ai/blob/main/SPEC.md) — a minimal, human- and agent-friendly format using markdown files with YAML frontmatter. No special tooling required: if you can `cat` a file, you can read this catalog.
+This catalog follows the [Open Knowledge Format (OKF) v0.1](https://github.com/o3-cloud/ai/blob/main/SPEC.html) — a minimal, human- and agent-friendly format using markdown files with YAML frontmatter. No special tooling required: if you can `cat` a file, you can read this catalog.
 
 ## Catalog Stats
 

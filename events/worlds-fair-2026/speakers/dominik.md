@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [The Prompt is the Platform](../talks/the-prompt-is-the-platform.md) — Sandbox & Platform Engineering
+* [The Prompt is the Platform](../talks/the-prompt-is-the-platform.html) — Sandbox & Platform Engineering

@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Building Great Agent Skills: The Missing Manual](../talks/building-great-agent-skills-the-missing-manual.md) — Software Factories
+* [Building Great Agent Skills: The Missing Manual](../talks/building-great-agent-skills-the-missing-manual.html) — Software Factories

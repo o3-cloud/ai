@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [When all context matters: Extended Cache Augmented Generation (ECAG)](../talks/when-all-context-matters-extended-cache-augmented-generation-ecag.md) — Context Engineering
+* [When all context matters: Extended Cache Augmented Generation (ECAG)](../talks/when-all-context-matters-extended-cache-augmented-generation-ecag.html) — Context Engineering

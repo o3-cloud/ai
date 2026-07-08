@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Research to Reality: Bringing frontier ML research to production](../talks/research-to-reality-bringing-frontier-ml-research-to-production.md) — Search & Retrieval
+* [Research to Reality: Bringing frontier ML research to production](../talks/research-to-reality-bringing-frontier-ml-research-to-production.html) — Search & Retrieval

@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Agents Building Agents](../talks/agents-building-agents.md) — Agentic Engineering
+* [Agents Building Agents](../talks/agents-building-agents.html) — Agentic Engineering

@@ -21,9 +21,9 @@ AI-assisted development pipelines, coding agents, and build systems
 
 ## Talks
 
-* [Build Systems, Not Code](../talks/build-systems-not-code.md) — Angie Jones (Agentic AI Foundation)
-* [Building Great Agent Skills: The Missing Manual](../talks/building-great-agent-skills-the-missing-manual.md) — Matt Pocock (AI Hero)
-* [Building an Autonomous Engineering Org](../talks/building-an-autonomous-engineering-org.md) — Angie Jones (Agentic AI Foundation)
-* [Structuring the Unstructured: Advanced Document Parsing for AI Workflows](../talks/structuring-the-unstructured-advanced-document-parsing-for-ai-workflows.md) — Cedric Clyburn (Red Hat)
-* [Using Spec-Driven Development for Production Workflows](../talks/using-spec-driven-development-for-production-workflows.md) — Erik Hanchett (AWS)
-* [Your Agent Is Wasting Tokens and You Don't Know It](../talks/your-agent-is-wasting-tokens-and-you-dont-know-it.md) — Erik Hanchett (AWS)
+* [Build Systems, Not Code](../talks/build-systems-not-code.html) — Angie Jones (Agentic AI Foundation)
+* [Building Great Agent Skills: The Missing Manual](../talks/building-great-agent-skills-the-missing-manual.html) — Matt Pocock (AI Hero)
+* [Building an Autonomous Engineering Org](../talks/building-an-autonomous-engineering-org.html) — Angie Jones (Agentic AI Foundation)
+* [Structuring the Unstructured: Advanced Document Parsing for AI Workflows](../talks/structuring-the-unstructured-advanced-document-parsing-for-ai-workflows.html) — Cedric Clyburn (Red Hat)
+* [Using Spec-Driven Development for Production Workflows](../talks/using-spec-driven-development-for-production-workflows.html) — Erik Hanchett (AWS)
+* [Your Agent Is Wasting Tokens and You Don't Know It](../talks/your-agent-is-wasting-tokens-and-you-dont-know-it.html) — Erik Hanchett (AWS)

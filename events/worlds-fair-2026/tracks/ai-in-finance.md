@@ -21,4 +21,4 @@ AI applications in financial services
 
 ## Talks
 
-* [AI-Driven Multi-Document Correlation for Enterprise Financial Compliance](../talks/ai-driven-multi-document-correlation-for-enterprise-financial-compliance.md) — Varsha Shah ()
+* [AI-Driven Multi-Document Correlation for Enterprise Financial Compliance](../talks/ai-driven-multi-document-correlation-for-enterprise-financial-compliance.html) — Varsha Shah ()

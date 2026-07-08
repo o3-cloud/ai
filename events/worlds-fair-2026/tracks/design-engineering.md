@@ -21,4 +21,4 @@ AI-assisted design, generative UI, and design systems
 
 ## Talks
 
-* [AI System Design: From Idea to Production](../talks/ai-system-design-from-idea-to-production.md) — Apoorva Joshi (MongoDB)
+* [AI System Design: From Idea to Production](../talks/ai-system-design-from-idea-to-production.html) — Apoorva Joshi (MongoDB)

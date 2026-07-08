@@ -1,7 +1,7 @@
 ---
 layout: default
 type: Event
-title: AI Engineer World'''s Fair 2026
+title: "AI Engineer World's Fair 2026"
 description: The largest technical AI conference in the world, with 29 tracks, 300 speakers, 100 expo partners, 6,000+ AI Engineers.
 resource: https://ai.engineer/worldsfair/2026
 dates: 2026-06-29 to 2026-07-02
@@ -46,33 +46,33 @@ Tracks: Harness Engineering, Generative Media, Agentic Commerce, AI in Finance, 
 
 ### Tracks
 
-* [AI in Finance](tracks/ai-in-finance.md) - 1 talks
-* [AI-Native Enterprises](tracks/ai-native-enterprises.md) - 1 talks
-* [Agentic Engineering](tracks/agentic-engineering.md) - 5 talks
-* [Autoresearch](tracks/autoresearch.md) - 1 talks
-* [Claws & Personal Agents](tracks/claws-personal-agents.md) - 3 talks
-* [Computer Use](tracks/computer-use.md) - 1 talks
-* [Context Engineering](tracks/context-engineering.md) - 3 talks
-* [Design Engineering](tracks/design-engineering.md) - 1 talks
-* [Evals](tracks/evals.md) - 3 talks
-* [General](tracks/general.md) - 2 talks
-* [Generative Media](tracks/generative-media.md) - 1 talks
-* [Memory & Continual Learning](tracks/memory-continual-learning.md) - 1 talks
-* [Sandbox & Platform Engineering](tracks/sandbox-platform-engineering.md) - 1 talks
-* [Search & Retrieval](tracks/search-retrieval.md) - 2 talks
-* [Software Factories](tracks/software-factories.md) - 6 talks
-* [Voice & Realtime AI](tracks/voice-realtime-ai.md) - 1 talks
+* [AI in Finance](tracks/ai-in-finance.html) - 1 talks
+* [AI-Native Enterprises](tracks/ai-native-enterprises.html) - 1 talks
+* [Agentic Engineering](tracks/agentic-engineering.html) - 5 talks
+* [Autoresearch](tracks/autoresearch.html) - 1 talks
+* [Claws & Personal Agents](tracks/claws-personal-agents.html) - 3 talks
+* [Computer Use](tracks/computer-use.html) - 1 talks
+* [Context Engineering](tracks/context-engineering.html) - 3 talks
+* [Design Engineering](tracks/design-engineering.html) - 1 talks
+* [Evals](tracks/evals.html) - 3 talks
+* [General](tracks/general.html) - 2 talks
+* [Generative Media](tracks/generative-media.html) - 1 talks
+* [Memory & Continual Learning](tracks/memory-continual-learning.html) - 1 talks
+* [Sandbox & Platform Engineering](tracks/sandbox-platform-engineering.html) - 1 talks
+* [Search & Retrieval](tracks/search-retrieval.html) - 2 talks
+* [Software Factories](tracks/software-factories.html) - 6 talks
+* [Voice & Realtime AI](tracks/voice-realtime-ai.html) - 1 talks
 
 
 ### Talks
 
-33 talks cataloged. See [talks/](talks/index.md) for the full listing.
+33 talks cataloged. See [talks/](talks/index.html) for the full listing.
 
 ### Speakers
 
-See [speakers/](speakers/index.md) for speaker profiles.
+See [speakers/](speakers/index.html) for speaker profiles.
 
 ## Related
 
 * [AI Engineer YouTube Channel](https://youtube.com/@aiDotEngineer)
-* [Full Schedule (llms.md)](https://ai.engineer/wf/llms.md)
+* [Full Schedule (llms.html)](https://ai.engineer/wf/llms.html)

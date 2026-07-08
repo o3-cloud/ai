@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [The 100-Tool Agent Is a Trap](../talks/the-100-tool-agent-is-a-trap.md) — Agentic Engineering
+* [The 100-Tool Agent Is a Trap](../talks/the-100-tool-agent-is-a-trap.html) — Agentic Engineering

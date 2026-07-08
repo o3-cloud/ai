@@ -21,4 +21,4 @@ Automated research, ML research to production
 
 ## Talks
 
-* [The Agentic AI Engineer](../talks/the-agentic-ai-engineer.md) — Benedikt Sanftl (Mutagent)
+* [The Agentic AI Engineer](../talks/the-agentic-ai-engineer.html) — Benedikt Sanftl (Mutagent)

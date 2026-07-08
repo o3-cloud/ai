@@ -15,5 +15,5 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Build Systems, Not Code](../talks/build-systems-not-code.md) — Software Factories
-* [Building an Autonomous Engineering Org](../talks/building-an-autonomous-engineering-org.md) — Software Factories
+* [Build Systems, Not Code](../talks/build-systems-not-code.html) — Software Factories
+* [Building an Autonomous Engineering Org](../talks/building-an-autonomous-engineering-org.html) — Software Factories

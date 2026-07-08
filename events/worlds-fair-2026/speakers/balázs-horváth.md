@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [You Can't Prompt the Room](../talks/you-cant-prompt-the-room.md) — Context Engineering
+* [You Can't Prompt the Room](../talks/you-cant-prompt-the-room.html) — Context Engineering

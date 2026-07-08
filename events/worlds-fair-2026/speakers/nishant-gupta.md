@@ -15,5 +15,5 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Building Deterministic Infrastructure for Non-Deterministic AI Agents](../talks/building-deterministic-infrastructure-for-non-deterministic-ai-agents.md) — Evals
-* [Production Evals For Agentic AI Systems](../talks/production-evals-for-agentic-ai-systems.md) — Evals
+* [Building Deterministic Infrastructure for Non-Deterministic AI Agents](../talks/building-deterministic-infrastructure-for-non-deterministic-ai-agents.html) — Evals
+* [Production Evals For Agentic AI Systems](../talks/production-evals-for-agentic-ai-systems.html) — Evals

@@ -21,8 +21,8 @@ Key themes from AI Engineer World's Fair 2026:
 
 ## Talks on this topic
 
-* [HTML is All You Need (for Agents to Make Graphics)](../../events/worlds-fair-2026/talks/html-is-all-you-need-for-agents-to-make-graphics.md) — Amol Kapoor (Nori)
-* [Voice In, Visuals Out: The Agony and the Ecstasy](../../events/worlds-fair-2026/talks/voice-in-visuals-out-the-agony-and-the-ecstasy.md) — Allen Pike (Forestwalk Labs)
-* [Browser Agents Don't Need Better Models. They Need Better Eyes.](../../events/worlds-fair-2026/talks/browser-agents-dont-need-better-models-they-need-better-eyes.md) — Kushan Raj (ARK)
-* [Bypassing the Multimodal Tax](../../events/worlds-fair-2026/talks/bypassing-the-multimodal-tax.md) — Abed Matini (Ogilvy)
+* [HTML is All You Need (for Agents to Make Graphics)](../../events/worlds-fair-2026/talks/html-is-all-you-need-for-agents-to-make-graphics.html) — Amol Kapoor (Nori)
+* [Voice In, Visuals Out: The Agony and the Ecstasy](../../events/worlds-fair-2026/talks/voice-in-visuals-out-the-agony-and-the-ecstasy.html) — Allen Pike (Forestwalk Labs)
+* [Browser Agents Don't Need Better Models. They Need Better Eyes.](../../events/worlds-fair-2026/talks/browser-agents-dont-need-better-models-they-need-better-eyes.html) — Kushan Raj (ARK)
+* [Bypassing the Multimodal Tax](../../events/worlds-fair-2026/talks/bypassing-the-multimodal-tax.html) — Abed Matini (Ogilvy)
 

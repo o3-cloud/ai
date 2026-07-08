@@ -21,4 +21,4 @@ Agent memory, continual learning, and persistent context
 
 ## Talks
 
-* [Turn 10,994 Notes Into Your Agents' Memory](../talks/turn-10994-notes-into-your-agents-memory.md) — Paul Iusztin ()
+* [Turn 10,994 Notes Into Your Agents' Memory](../talks/turn-10994-notes-into-your-agents-memory.html) — Paul Iusztin ()

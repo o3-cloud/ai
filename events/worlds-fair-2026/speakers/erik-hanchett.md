@@ -15,5 +15,5 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Using Spec-Driven Development for Production Workflows](../talks/using-spec-driven-development-for-production-workflows.md) — Software Factories
-* [Your Agent Is Wasting Tokens and You Don't Know It](../talks/your-agent-is-wasting-tokens-and-you-dont-know-it.md) — Software Factories
+* [Using Spec-Driven Development for Production Workflows](../talks/using-spec-driven-development-for-production-workflows.html) — Software Factories
+* [Your Agent Is Wasting Tokens and You Don't Know It](../talks/your-agent-is-wasting-tokens-and-you-dont-know-it.html) — Software Factories

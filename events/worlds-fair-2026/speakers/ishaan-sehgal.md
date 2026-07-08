@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [The Log Is The Agent](../talks/the-log-is-the-agent.md) — Agentic Engineering
+* [The Log Is The Agent](../talks/the-log-is-the-agent.html) — Agentic Engineering

@@ -21,4 +21,4 @@ Voice interfaces, real-time AI, and multimodal interaction
 
 ## Talks
 
-* [Voice In, Visuals Out: The Agony and the Ecstasy](../talks/voice-in-visuals-out-the-agony-and-the-ecstasy.md) — Allen Pike (Forestwalk Labs)
+* [Voice In, Visuals Out: The Agony and the Ecstasy](../talks/voice-in-visuals-out-the-agony-and-the-ecstasy.html) — Allen Pike (Forestwalk Labs)

@@ -21,4 +21,4 @@ Computer-using agents, GUI automation, and browser agents
 
 ## Talks
 
-* [Browser Agents Don't Need Better Models. They Need Better Eyes.](../talks/browser-agents-dont-need-better-models-they-need-better-eyes.md) — Kushan Raj (ARK)
+* [Browser Agents Don't Need Better Models. They Need Better Eyes.](../talks/browser-agents-dont-need-better-models-they-need-better-eyes.html) — Kushan Raj (ARK)

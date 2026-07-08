@@ -21,4 +21,4 @@ Generative AI for media, images, and creative content
 
 ## Talks
 
-* [HTML is All You Need (for Agents to Make Graphics)](../talks/html-is-all-you-need-for-agents-to-make-graphics.md) — Amol Kapoor (Nori)
+* [HTML is All You Need (for Agents to Make Graphics)](../talks/html-is-all-you-need-for-agents-to-make-graphics.html) — Amol Kapoor (Nori)

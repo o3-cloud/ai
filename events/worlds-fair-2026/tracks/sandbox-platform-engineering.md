@@ -21,4 +21,4 @@ AI platforms, sandboxing, and infrastructure
 
 ## Talks
 
-* [The Prompt is the Platform](../talks/the-prompt-is-the-platform.md) — Dominik (Resonate HQ)
+* [The Prompt is the Platform](../talks/the-prompt-is-the-platform.html) — Dominik (Resonate HQ)

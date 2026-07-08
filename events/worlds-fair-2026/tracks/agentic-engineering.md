@@ -21,8 +21,8 @@ Agent architectures, multi-agent systems, and agentic workflows
 
 ## Talks
 
-* [Agents Building Agents](../talks/agents-building-agents.md) — Alfonso Graziano (Nearform)
-* [Recursive Coding Agents](../talks/recursive-coding-agents.md) — Raymond Weitekamp (OpenProse)
-* [The 100-Tool Agent Is a Trap](../talks/the-100-tool-agent-is-a-trap.md) — Sohail Shaikh & Ankush Rastogi (Prosodica)
-* [The Log Is The Agent](../talks/the-log-is-the-agent.md) — Ishaan Sehgal (Omnara)
-* [Your Agent Failed in Prod. Good Luck Reproducing It.](../talks/your-agent-failed-in-prod-good-luck-reproducing-it.md) — Tisha Chawla & Susheem Koul (Microsoft)
+* [Agents Building Agents](../talks/agents-building-agents.html) — Alfonso Graziano (Nearform)
+* [Recursive Coding Agents](../talks/recursive-coding-agents.html) — Raymond Weitekamp (OpenProse)
+* [The 100-Tool Agent Is a Trap](../talks/the-100-tool-agent-is-a-trap.html) — Sohail Shaikh & Ankush Rastogi (Prosodica)
+* [The Log Is The Agent](../talks/the-log-is-the-agent.html) — Ishaan Sehgal (Omnara)
+* [Your Agent Failed in Prod. Good Luck Reproducing It.](../talks/your-agent-failed-in-prod-good-luck-reproducing-it.html) — Tisha Chawla & Susheem Koul (Microsoft)

@@ -23,9 +23,9 @@ Key themes from AI Engineer World's Fair 2026:
 
 ## Talks on this topic
 
-* [Agents Building Agents](../../events/worlds-fair-2026/talks/agents-building-agents.md) — Alfonso Graziano (Nearform)
-* [Building an Autonomous Engineering Org](../../events/worlds-fair-2026/talks/building-an-autonomous-engineering-org.md) — Angie Jones (Agentic AI Foundation)
-* [Recursive Coding Agents](../../events/worlds-fair-2026/talks/recursive-coding-agents.md) — Raymond Weitekamp (OpenProse)
-* [The 100-Tool Agent Is a Trap](../../events/worlds-fair-2026/talks/the-100-tool-agent-is-a-trap.md) — Sohail Shaikh & Ankush Rastogi (Prosodica)
-* [The Agentic AI Engineer](../../events/worlds-fair-2026/talks/the-agentic-ai-engineer.md) — Benedikt Sanftl (Mutagent)
+* [Agents Building Agents](../../events/worlds-fair-2026/talks/agents-building-agents.html) — Alfonso Graziano (Nearform)
+* [Building an Autonomous Engineering Org](../../events/worlds-fair-2026/talks/building-an-autonomous-engineering-org.html) — Angie Jones (Agentic AI Foundation)
+* [Recursive Coding Agents](../../events/worlds-fair-2026/talks/recursive-coding-agents.html) — Raymond Weitekamp (OpenProse)
+* [The 100-Tool Agent Is a Trap](../../events/worlds-fair-2026/talks/the-100-tool-agent-is-a-trap.html) — Sohail Shaikh & Ankush Rastogi (Prosodica)
+* [The Agentic AI Engineer](../../events/worlds-fair-2026/talks/the-agentic-ai-engineer.html) — Benedikt Sanftl (Mutagent)
 

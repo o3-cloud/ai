@@ -22,7 +22,7 @@ Key themes from AI Engineer World's Fair 2026:
 
 ## Talks on this topic
 
-* [Turn 10,994 Notes Into Your Agents' Memory](../../events/worlds-fair-2026/talks/turn-10994-notes-into-your-agents-memory.md) — Paul Iusztin ()
-* [A Genius With Amnesia](../../events/worlds-fair-2026/talks/a-genius-with-amnesia.md) — Victor Savkin (Nx)
-* [The Log Is The Agent](../../events/worlds-fair-2026/talks/the-log-is-the-agent.md) — Ishaan Sehgal (Omnara)
+* [Turn 10,994 Notes Into Your Agents' Memory](../../events/worlds-fair-2026/talks/turn-10994-notes-into-your-agents-memory.html) — Paul Iusztin ()
+* [A Genius With Amnesia](../../events/worlds-fair-2026/talks/a-genius-with-amnesia.html) — Victor Savkin (Nx)
+* [The Log Is The Agent](../../events/worlds-fair-2026/talks/the-log-is-the-agent.html) — Ishaan Sehgal (Omnara)
 

@@ -21,6 +21,6 @@ Context management, prompt engineering, and context window optimization
 
 ## Talks
 
-* [We Cut 94% of Our AI Coding Tokens With a Local Code Index](../talks/we-cut-94-of-our-ai-coding-tokens-with-a-local-code-index.md) — Rajkumar Sakthivel (Tesco)
-* [When all context matters: Extended Cache Augmented Generation (ECAG)](../talks/when-all-context-matters-extended-cache-augmented-generation-ecag.md) — Luis Romero-Sevilla (Orbis Operations)
-* [You Can't Prompt the Room](../talks/you-cant-prompt-the-room.md) — Balázs Horváth (VisualLabs)
+* [We Cut 94% of Our AI Coding Tokens With a Local Code Index](../talks/we-cut-94-of-our-ai-coding-tokens-with-a-local-code-index.html) — Rajkumar Sakthivel (Tesco)
+* [When all context matters: Extended Cache Augmented Generation (ECAG)](../talks/when-all-context-matters-extended-cache-augmented-generation-ecag.html) — Luis Romero-Sevilla (Orbis Operations)
+* [You Can't Prompt the Room](../talks/you-cant-prompt-the-room.html) — Balázs Horváth (VisualLabs)

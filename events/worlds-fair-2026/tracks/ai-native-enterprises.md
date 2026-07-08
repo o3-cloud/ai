@@ -21,4 +21,4 @@ Building AI-native organizations and processes
 
 ## Talks
 
-* [Agents in Production: How OpenGov Built and Scaled OG Assist](../talks/agents-in-production-how-opengov-built-and-scaled-og-assist.md) — Gabe De Mesa (OpenGov)
+* [Agents in Production: How OpenGov Built and Scaled OG Assist](../talks/agents-in-production-how-opengov-built-and-scaled-og-assist.html) — Gabe De Mesa (OpenGov)

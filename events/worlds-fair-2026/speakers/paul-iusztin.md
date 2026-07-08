@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Turn 10,994 Notes Into Your Agents' Memory](../talks/turn-10994-notes-into-your-agents-memory.md) — Memory & Continual Learning
+* [Turn 10,994 Notes Into Your Agents' Memory](../talks/turn-10994-notes-into-your-agents-memory.html) — Memory & Continual Learning

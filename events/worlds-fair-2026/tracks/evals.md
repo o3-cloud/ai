@@ -21,6 +21,6 @@ Evaluation, testing, and observability for AI systems
 
 ## Talks
 
-* [Building Deterministic Infrastructure for Non-Deterministic AI Agents](../talks/building-deterministic-infrastructure-for-non-deterministic-ai-agents.md) — Nishant Gupta (Meta)
-* [Production Evals For Agentic AI Systems](../talks/production-evals-for-agentic-ai-systems.md) — Nishant Gupta (Meta)
-* [The Miranda Hypothesis](../talks/the-miranda-hypothesis.md) — Jacob E. Thomas (Results Generation)
+* [Building Deterministic Infrastructure for Non-Deterministic AI Agents](../talks/building-deterministic-infrastructure-for-non-deterministic-ai-agents.html) — Nishant Gupta (Meta)
+* [Production Evals For Agentic AI Systems](../talks/production-evals-for-agentic-ai-systems.html) — Nishant Gupta (Meta)
+* [The Miranda Hypothesis](../talks/the-miranda-hypothesis.html) — Jacob E. Thomas (Results Generation)

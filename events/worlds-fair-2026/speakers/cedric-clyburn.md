@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Structuring the Unstructured: Advanced Document Parsing for AI Workflows](../talks/structuring-the-unstructured-advanced-document-parsing-for-ai-workflows.md) — Software Factories
+* [Structuring the Unstructured: Advanced Document Parsing for AI Workflows](../talks/structuring-the-unstructured-advanced-document-parsing-for-ai-workflows.html) — Software Factories

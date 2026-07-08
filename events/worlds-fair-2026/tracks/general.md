@@ -21,5 +21,5 @@ Talks spanning multiple tracks
 
 ## Talks
 
-* [Bypassing the Multimodal Tax](../talks/bypassing-the-multimodal-tax.md) — Abed Matini (Ogilvy)
-* [Stop Writing Tone Instructions. Layer Them.](../talks/stop-writing-tone-instructions-layer-them.md) — Isadora Martin-Dye ()
+* [Bypassing the Multimodal Tax](../talks/bypassing-the-multimodal-tax.html) — Abed Matini (Ogilvy)
+* [Stop Writing Tone Instructions. Layer Them.](../talks/stop-writing-tone-instructions-layer-them.html) — Isadora Martin-Dye ()

@@ -21,7 +21,7 @@ Key themes from AI Engineer World's Fair 2026:
 
 ## Talks on this topic
 
-* [Agents in Production: How OpenGov Built and Scaled OG Assist](../../events/worlds-fair-2026/talks/agents-in-production-how-opengov-built-and-scaled-og-assist.md) — Gabe De Mesa (OpenGov)
-* [AI-Driven Multi-Document Correlation for Enterprise Financial Compliance and Fraud Detection](../../events/worlds-fair-2026/talks/ai-driven-multi-document-correlation-for-enterprise-financial-compliance-and-fra.md)
-* [Using RL-based Agent to Detect and Remediate ETL Pipeline Failures](../../events/worlds-fair-2026/talks/using-rl-based-agent-to-detect-and-remediate-etl-pipeline-failures.md)
+* [Agents in Production: How OpenGov Built and Scaled OG Assist](../../events/worlds-fair-2026/talks/agents-in-production-how-opengov-built-and-scaled-og-assist.html) — Gabe De Mesa (OpenGov)
+* [AI-Driven Multi-Document Correlation for Enterprise Financial Compliance and Fraud Detection](../../events/worlds-fair-2026/talks/ai-driven-multi-document-correlation-for-enterprise-financial-compliance-and-fra.html)
+* [Using RL-based Agent to Detect and Remediate ETL Pipeline Failures](../../events/worlds-fair-2026/talks/using-rl-based-agent-to-detect-and-remediate-etl-pipeline-failures.html)
 

@@ -21,5 +21,5 @@ RAG, retrieval strategies, and search infrastructure
 
 ## Talks
 
-* [Research to Reality: Bringing frontier ML research to production](../talks/research-to-reality-bringing-frontier-ml-research-to-production.md) — Vaidas Razgaitis (Higharc)
-* [User Signal Die at the Retrieval Boundary](../talks/user-signal-die-at-the-retrieval-boundary.md) — Sonam Pankaj (StarlightSearch Inc)
+* [Research to Reality: Bringing frontier ML research to production](../talks/research-to-reality-bringing-frontier-ml-research-to-production.html) — Vaidas Razgaitis (Higharc)
+* [User Signal Die at the Retrieval Boundary](../talks/user-signal-die-at-the-retrieval-boundary.html) — Sonam Pankaj (StarlightSearch Inc)

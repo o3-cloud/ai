@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Field Guide to Fable](../talks/field-guide-to-fable.md) — Claws & Personal Agents
+* [Field Guide to Fable](../talks/field-guide-to-fable.html) — Claws & Personal Agents

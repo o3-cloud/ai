@@ -15,4 +15,4 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Talks
 
-* [Recursive Coding Agents](../talks/recursive-coding-agents.md) — Agentic Engineering
+* [Recursive Coding Agents](../talks/recursive-coding-agents.html) — Agentic Engineering

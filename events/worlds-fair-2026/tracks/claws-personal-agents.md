@@ -21,6 +21,6 @@ Personal AI agents, on-device assistants, and agent UX
 
 ## Talks
 
-* [A Genius With Amnesia](../talks/a-genius-with-amnesia.md) — Victor Savkin (Nx)
-* [Field Guide to Fable](../talks/field-guide-to-fable.md) — Thariq Shihipar (Anthropic)
-* [OpenClaw in Your Hand: Building a Physical AI Terminal for Local LLM Agents](../talks/openclaw-in-your-hand-building-a-physical-ai-terminal-for-local-llm-agents.md) — Lech Kalinowski (Callstack)
+* [A Genius With Amnesia](../talks/a-genius-with-amnesia.html) — Victor Savkin (Nx)
+* [Field Guide to Fable](../talks/field-guide-to-fable.html) — Thariq Shihipar (Anthropic)
+* [OpenClaw in Your Hand: Building a Physical AI Terminal for Local LLM Agents](../talks/openclaw-in-your-hand-building-a-physical-ai-terminal-for-local-llm-agents.html) — Lech Kalinowski (Callstack)
