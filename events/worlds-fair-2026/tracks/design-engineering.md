@@ -8,7 +8,7 @@ day: Day 3
 room: Track 6
 talks: 1
 tags: [track, design-engineering]
-timestamp: 2026-07-08T00:00:00+00:00
+timestamp: 2026-07-09T00:00:00+00:00
 ---
 
 # Design Engineering
@@ -21,4 +21,4 @@ AI-assisted design, generative UI, and design systems
 
 ## Talks
 
-* [AI System Design: From Idea to Production](../talks/ai-system-design-from-idea-to-production.html) — Apoorva Joshi (MongoDB)
+* [AI System Design: From Idea to Production](../talks/ai-system-design-from-idea-to-production.html) ✅ — Apoorva Joshi (MongoDB)

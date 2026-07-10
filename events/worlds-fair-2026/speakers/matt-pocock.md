@@ -5,7 +5,7 @@ title: Matt Pocock
 company: AI Hero
 talks: 1
 tags: [speaker]
-timestamp: 2026-07-08T00:00:00+00:00
+timestamp: 2026-07-09T00:00:00+00:00
 ---
 
 # Matt Pocock

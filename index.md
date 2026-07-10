@@ -1,50 +1,29 @@
 ---
 layout: default
+okf_version: "0.1"
 title: AI Knowledge Catalog
-description: An open knowledge catalog of AI engineering resources from AI Engineer events, built following the Open Knowledge Format specification.
 ---
 
-<div class="hero">
-  <h1>AI Knowledge Catalog</h1>
-  <p>An open knowledge catalog of AI engineering resources from AI Engineer events, built following the Open Knowledge Format (OKF) specification.</p>
-</div>
+# AI Knowledge Catalog
 
-## What's Inside
+A structured knowledge catalog of AI engineering resources from AI Engineer events.
 
-<div class="cards">
-  <a class="card" href="{{ '/events/worlds-fair-2026/' | relative_url }}">
-    <h3>🎤 AI Engineer World's Fair 2026</h3>
-    <p>June 29 – July 2, 2026 · San Francisco · 29 tracks · 300+ speakers · 33 talks with full transcripts</p>
-  </a>
-  <a class="card" href="{{ '/concepts/' | relative_url }}">
-    <h3>🧠 Concepts</h3>
-    <p>8 cross-event AI engineering concepts: Agentic Engineering, Context Engineering, Evaluation, Software Factories, and more</p>
-  </a>
-  <a class="card" href="{{ '/events/worlds-fair-2026/talks/' | relative_url }}">
-    <h3>🎬 Talks</h3>
-    <p>33 talks with full transcripts, summaries, and key points — organized across 16 tracks</p>
-  </a>
-  <a class="card" href="{{ '/events/worlds-fair-2026/speakers/' | relative_url }}">
-    <h3>👤 Speakers</h3>
-    <p>30 speaker profiles with their talks and affiliations</p>
-  </a>
-</div>
+## Events
 
-## Format
+* [AI Engineer World's Fair 2026](events/worlds-fair-2026/index.html) - June 29 - July 2, 2026, San Francisco. 60 talks (58 with transcripts) across 21 tracks.
 
-This catalog follows the [Open Knowledge Format (OKF) v0.1](https://github.com/o3-cloud/ai/blob/main/SPEC.html) — a minimal, human- and agent-friendly format using markdown files with YAML frontmatter. No special tooling required: if you can `cat` a file, you can read this catalog.
+## Concepts
 
-## Catalog Stats
+* [Agentic Engineering](concepts/agentic-engineering/index.html) - Agent architectures, autonomous systems, and agentic workflows
+* [Context Engineering](concepts/context-engineering/index.html) - Context management, RAG, and retrieval strategies
+* [Evaluation & Testing](concepts/evaluation/index.html) - Production evals, testing, and observability for AI systems
+* [Software Factories](concepts/software-factories/index.html) - AI-assisted development, coding agents, and build systems
+* [Agent Memory & Continual Learning](concepts/agent-memory/index.html) - Persistent context, agent memory systems, and continual learning
+* [Personal Agents & Claws](concepts/personal-agents/index.html) - On-device AI assistants, personal agents, and local LLM terminals
+* [Multimodal AI](concepts/multimodal-ai/index.html) - Vision, voice, browser agents, and multimodal AI systems
+* [Production AI Systems](concepts/production-ai/index.html) - Deploying AI in production, infrastructure, and enterprise applications
 
-| | |
-|---|---|
-| **Event** | AI Engineer World's Fair 2026 |
-| **Talks** | 33 with full transcripts |
-| **Speakers** | 30 |
-| **Tracks** | 16 |
-| **Concepts** | 8 |
-| **Format** | OKF v0.1 (Markdown + YAML frontmatter) |
+## References
 
-## Repository
-
-The full catalog is available on GitHub: [o3-cloud/ai](https://github.com/o3-cloud/ai)
+* [AI Engineer YouTube](https://youtube.com/@aiDotEngineer) - Official channel with all talk videos
+* [OKF Specification](https://github.com/o3-cloud/ai/blob/main/SPEC.md) - Open Knowledge Format reference

@@ -7,72 +7,52 @@ resource: https://ai.engineer/worldsfair/2026
 dates: 2026-06-29 to 2026-07-02
 location: Moscone West Convention Center, San Francisco, CA
 tags: [conference, ai-engineer, worlds-fair, 2026]
-timestamp: 2026-07-08T00:00:00+00:00
+timestamp: 2026-07-09T00:00:00+00:00
 ---
 
-# AI Engineer World'''s Fair 2026
+# AI Engineer World's Fair 2026
 
 The largest technical AI conference in the world. June 29 – July 2, 2026 at
 Moscone West Convention Center, San Francisco, CA.
 
-## Event Details
-
-| | |
-|---|---|
-| **Dates** | June 29 – July 2, 2026 |
-| **Location** | Moscone West Convention Center, San Francisco, CA |
-| **Tracks** | 29 tracks across 4 days |
-| **Speakers** | 300+ speakers |
-| **Attendees** | 6,000+ AI Engineers, founders, and VPs |
-| **Website** | https://ai.engineer/worldsfair/2026 |
-| **YouTube** | https://youtube.com/@aiDotEngineer |
-
-## Schedule Overview
-
-### Day 1 — Monday, June 29: Workshop Day + Welcome Reception
-
-### Day 2 — Tuesday, June 30: Keynotes + Breakouts
-Tracks: Software Factories, Claws & Personal Agents, Vision & OCR, Search & Retrieval, Security, Voice & Realtime AI, LLM Recsys, Forward Deployed Engineering, Data Quality, AI-Native Enterprises
-
-### Day 3 — Wednesday, July 1: World Cup + Multi-Track Programming
-Tracks: Autoresearch, Sandbox & Platform Engineering, Robotics & World Models, Memory & Continual Learning, Evals, Design Engineering, Computer Use, Context Engineering, Posttraining & Midtraining
-
-### Day 4 — Thursday, July 2: Final Day + Last Chance Expo
-Tracks: Harness Engineering, Generative Media, Agentic Commerce, AI in Finance, Local AI, Graphs, AI in GTM, AI in Healthcare, Agentic Engineering, Inference
-
 ## Catalog Contents
 
-33 talks with full transcripts, organized across 16 tracks.
+60 talks cataloged (58 with full transcripts, 2 pending).
+Organized across 21 tracks.
 
 ### Tracks
 
 * [AI in Finance](tracks/ai-in-finance.html) - 1 talks
-* [AI-Native Enterprises](tracks/ai-native-enterprises.html) - 1 talks
-* [Agentic Engineering](tracks/agentic-engineering.html) - 5 talks
+* [AI in GTM](tracks/ai-in-gtm.html) - 1 talks
+* [AI-Native Enterprises](tracks/ai-native-enterprises.html) - 4 talks
+* [Agentic Engineering](tracks/agentic-engineering.html) - 10 talks
 * [Autoresearch](tracks/autoresearch.html) - 1 talks
 * [Claws & Personal Agents](tracks/claws-personal-agents.html) - 3 talks
-* [Computer Use](tracks/computer-use.html) - 1 talks
+* [Computer Use](tracks/computer-use.html) - 2 talks
 * [Context Engineering](tracks/context-engineering.html) - 3 talks
+* [Data Quality](tracks/data-quality.html) - 2 talks
 * [Design Engineering](tracks/design-engineering.html) - 1 talks
-* [Evals](tracks/evals.html) - 3 talks
-* [General](tracks/general.html) - 2 talks
-* [Generative Media](tracks/generative-media.html) - 1 talks
-* [Memory & Continual Learning](tracks/memory-continual-learning.html) - 1 talks
-* [Sandbox & Platform Engineering](tracks/sandbox-platform-engineering.html) - 1 talks
-* [Search & Retrieval](tracks/search-retrieval.html) - 2 talks
+* [Evals](tracks/evals.html) - 5 talks
+* [General](tracks/general.html) - 5 talks
+* [Generative Media](tracks/generative-media.html) - 3 talks
+* [Harness Engineering](tracks/harness-engineering.html) - 2 talks
+* [Local AI](tracks/local-ai.html) - 1 talks
+* [Memory & Continual Learning](tracks/memory-continual-learning.html) - 2 talks
+* [Sandbox & Platform Engineering](tracks/sandbox-platform-engineering.html) - 2 talks
+* [Search & Retrieval](tracks/search-retrieval.html) - 4 talks
+* [Security](tracks/security.html) - 1 talks
 * [Software Factories](tracks/software-factories.html) - 6 talks
 * [Voice & Realtime AI](tracks/voice-realtime-ai.html) - 1 talks
 
-
 ### Talks
 
-33 talks cataloged. See [talks/](talks/index.html) for the full listing.
+60 talks cataloged. See [talks/](talks/index.html) for the full listing.
 
 ### Speakers
 
-See [speakers/](speakers/index.html) for speaker profiles.
+57 speakers. See [speakers/](speakers/index.html) for speaker profiles.
 
 ## Related
 
 * [AI Engineer YouTube Channel](https://youtube.com/@aiDotEngineer)
-* [Full Schedule (llms.html)](https://ai.engineer/wf/llms.html)
+* [Full Schedule (llms.md)](https://ai.engineer/wf/llms.md)
