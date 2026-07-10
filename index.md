@@ -12,6 +12,11 @@ A structured knowledge catalog of AI engineering resources from AI Engineer even
 
 * [AI Engineer World's Fair 2026](events/worlds-fair-2026/index.html) - June 29 - July 2, 2026, San Francisco. 60 talks (58 with transcripts) across 21 tracks.
 
+## Events
+
+* [AI Engineer World's Fair 2026](events/worlds-fair-2026/index.html) - June 29 - July 2, 2026, San Francisco. 60 talks (58 with transcripts) across 21 tracks.
+* [Latent Space Podcast](events/latent-space-podcast/index.html) - 31 episodes (29 with transcripts) from the last month.
+
 ## Concepts
 
 * [Agentic Engineering](concepts/agentic-engineering/index.html) - Agent architectures, autonomous systems, and agentic workflows
