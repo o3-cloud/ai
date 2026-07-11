@@ -92,9 +92,9 @@ ai/
 
 ### Beyond the Prompt YouTube
 
-- **Description:** Catalog entry for the Beyond the Prompt YouTube channel.
+- **Description:** Conversations from Beyond the Prompt covering AI, work, leadership, and practical decision-making.
 - **YouTube:** https://youtube.com/@BeyondthePrompt/videos
-- **Cataloged:** Source entry added; video curation pending
+- **Cataloged:** 13 recent videos, with transcripts pending full extraction
 
 ### Aakash Gupta YouTube
 
@@ -124,10 +124,11 @@ ai/
 | Latent Space Podcast | 31 episodes | 29 (94%) | 28 |
 | Lenny's Podcast YouTube | 8 videos | pending | 0 |
 | How I AI YouTube | 8 videos | pending | 0 |
+| Beyond the Prompt YouTube | 13 videos | pending | 0 |
 | Aakash Gupta YouTube | 8 videos | pending | 0 |
 | Boundary YouTube | 5 videos | pending | 3 |
 | Nate B Jones YouTube | 24 videos | pending | 1 |
-| **Total** | **144 entries** | **88 fully transcribed + 56 pending** | **89** |
+| **Total** | **157 entries** | **88 fully transcribed + 69 pending** | **89** |
 
 Plus 8 cross-event concept pages and 21 track/topic pages.
 
