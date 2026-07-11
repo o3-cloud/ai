@@ -3,7 +3,8 @@
 An open knowledge catalog of AI engineering resources, built following the
 [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog)
 specification. This catalog captures knowledge from AI Engineer events,
-the Latent Space Podcast, Boundary, Lenny's Podcast, and Nate B Jones.
+the Latent Space Podcast, Boundary, Lenny's Podcast, How I AI, Aakash Gupta,
+Beyond the Prompt, and Nate B Jones.
 
 ## What's Inside
 
@@ -33,6 +34,9 @@ ai/
 │   │   ├── index.md                    # Source overview
 │   │   └── videos/                     # Video transcripts & summaries
 │   ├── how-i-ai/                       # How I AI YouTube channel
+│   │   ├── index.md                    # Source overview
+│   │   └── videos/                     # Video transcripts & summaries
+│   ├── beyond-the-prompt/              # Beyond the Prompt YouTube channel
 │   │   ├── index.md                    # Source overview
 │   │   └── videos/                     # Video transcripts & summaries
 │   ├── grow-product/                   # Aakash Gupta / Grow Product YouTube channel
@@ -85,6 +89,12 @@ ai/
 - **Description:** A show about how real people are actually using AI to do better work, with practical workflows, live screen shares, and immediately stealable tips.
 - **YouTube:** https://youtube.com/@howiaipodcast/videos
 - **Cataloged:** 8 recent videos, with transcripts pending full extraction
+
+### Beyond the Prompt YouTube
+
+- **Description:** Catalog entry for the Beyond the Prompt YouTube channel.
+- **YouTube:** https://youtube.com/@BeyondthePrompt/videos
+- **Cataloged:** Source entry added; video curation pending
 
 ### Aakash Gupta YouTube
 
