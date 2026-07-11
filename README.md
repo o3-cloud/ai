@@ -3,7 +3,7 @@
 An open knowledge catalog of AI engineering resources, built following the
 [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog)
 specification. This catalog captures knowledge from AI Engineer events,
-the Latent Space Podcast, Boundary, and Nate B Jones.
+the Latent Space Podcast, Boundary, Lenny's Podcast, and Nate B Jones.
 
 ## What's Inside
 
@@ -30,6 +30,12 @@ ai/
 │   │   ├── episodes/                   # Episode transcripts & summaries
 │   │   └── speakers/                   # Speaker entries
 │   ├── boundary/                       # Boundary YouTube channel
+│   │   ├── index.md                    # Source overview
+│   │   └── videos/                     # Video transcripts & summaries
+│   ├── how-i-ai/                       # How I AI YouTube channel
+│   │   ├── index.md                    # Source overview
+│   │   └── videos/                     # Video transcripts & summaries
+│   ├── grow-product/                   # Aakash Gupta / Grow Product YouTube channel
 │   │   ├── index.md                    # Source overview
 │   │   └── videos/                     # Video transcripts & summaries
 │   ├── lennys-podcast/                 # Lenny's Podcast YouTube channel
@@ -74,6 +80,18 @@ ai/
 - **Website:** https://www.lennysnewsletter.com/
 - **Cataloged:** 8 recent videos, with transcripts pending full extraction
 
+### How I AI YouTube
+
+- **Description:** A show about how real people are actually using AI to do better work, with practical workflows, live screen shares, and immediately stealable tips.
+- **YouTube:** https://youtube.com/@howiaipodcast/videos
+- **Cataloged:** 8 recent videos, with transcripts pending full extraction
+
+### Aakash Gupta YouTube
+
+- **Description:** Everything I wish I knew about becoming an AI PM, with masterclasses on Claude Code, AI evals, prototyping, and interview loops at top AI companies.
+- **YouTube:** https://youtube.com/@growproduct/videos
+- **Cataloged:** 8 recent videos (1 transcribed, 7 pending)
+
 ### Boundary YouTube
 
 - **Description:** Boundary builds unbreakable agents with BAML
@@ -95,9 +113,11 @@ ai/
 | World's Fair 2026 | 60 talks | 58 (97%) | 57 |
 | Latent Space Podcast | 31 episodes | 29 (94%) | 28 |
 | Lenny's Podcast YouTube | 8 videos | pending | 0 |
+| How I AI YouTube | 8 videos | pending | 0 |
+| Aakash Gupta YouTube | 8 videos | pending | 0 |
 | Boundary YouTube | 5 videos | pending | 3 |
 | Nate B Jones YouTube | 24 videos | pending | 1 |
-| **Total** | **120 entries** | **87 fully transcribed + 29 pending** | **89** |
+| **Total** | **144 entries** | **88 fully transcribed + 56 pending** | **89** |
 
 Plus 8 cross-event concept pages and 21 track/topic pages.
 

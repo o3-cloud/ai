@@ -8,6 +8,10 @@ All cataloged talks from AI Engineer World's Fair 2026.
 
 **Total:** 60 talks (58 with transcripts, 2 pending)
 
+## Pending Transcripts
+
+See [pending talks](pending.html) for the two talks still awaiting transcripts.
+
 ## AI in Finance
 
 * [AI-Driven Multi-Document Correlation for Enterprise Financial Compliance](ai-driven-multi-document-correlation-for-enterprise-financial-compliance.html) ✅ — Varsha Shah ()

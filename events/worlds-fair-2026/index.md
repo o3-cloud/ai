@@ -46,7 +46,7 @@ Organized across 21 tracks.
 
 ### Talks
 
-60 talks cataloged. See [talks/](talks/index.html) for the full listing.
+60 talks cataloged. See [talks/](talks/index.html) for the full listing and [pending transcripts](talks/pending.html) for the two known gaps.
 
 ### Speakers
 

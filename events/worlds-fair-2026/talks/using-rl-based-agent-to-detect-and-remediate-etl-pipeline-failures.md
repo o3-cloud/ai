@@ -22,7 +22,7 @@ timestamp: 2026-07-08T00:00:00+00:00
 
 ## Transcript
 
-*Transcript not yet available. YouTube auto-captions are typically generated within 1-7 days of upload. This video was recently uploaded after the event (June 29 - July 2, 2026).*
+*Transcript capture is currently blocked by YouTube rate limiting (HTTP 429) on this machine. Auto-captions are available, but subtitle download could not complete during this attempt.*
 
 ---
 
