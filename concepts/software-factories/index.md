@@ -29,3 +29,11 @@ Key themes from AI Engineer World's Fair 2026:
 * [AI System Design: From Idea to Production](../../events/worlds-fair-2026/talks/ai-system-design-from-idea-to-production.html) — Apoorva Joshi (MongoDB)
 * [Structuring the Unstructured: Advanced Document Parsing for AI Workflows](../../events/worlds-fair-2026/talks/structuring-the-unstructured-advanced-document-parsing-for-ai-workflows.html) — Cedric Clyburn (Red Hat)
 
+## Boundary videos
+
+* [Stop Reading Code. Start Understanding Systems.](../../events/boundary/videos/stop-reading-code-start-understanding-systems.html) — Boundary
+* [The Self-Healing Agent Loop That Fixes Its Own Language](../../events/boundary/videos/the-self-healing-agent-loop-that-fixes-its-own-language.html) — Boundary
+* [Why Your AI Coding Agent Keeps Writing Bad Code (It's Not the Prompt)](../../events/boundary/videos/why-your-ai-coding-agent-keeps-writing-bad-code-its-not-the-prompt.html) — Boundary
+* [Testing Claude Fable 5: Why New AI Models Rarely Change Everything](../../events/boundary/videos/testing-claude-fable-5-why-new-ai-models-rarely-change-everything.html) — Boundary
+* [Why Performance Engineering Still Requires Human Judgment | No Vibes Allowed](../../events/boundary/videos/why-performance-engineering-still-requires-human-judgment-no-vibes-allowed.html) — Boundary
+
