@@ -32,6 +32,9 @@ ai/
 │   ├── boundary/                       # Boundary YouTube channel
 │   │   ├── index.md                    # Source overview
 │   │   └── videos/                     # Video transcripts & summaries
+│   ├── lennys-podcast/                 # Lenny's Podcast YouTube channel
+│   │   ├── index.md                    # Source overview
+│   │   └── videos/                     # Video transcripts & summaries
 │   └── nate-b-jones/                   # Nate B Jones YouTube channel
 │       ├── index.md                    # Source overview
 │       └── videos/                     # Video transcripts & summaries
@@ -64,6 +67,13 @@ ai/
 - **Website:** https://latent.space
 - **Cataloged:** 31 episodes (29 with full transcripts) from June–July 2026, 28 speaker profiles across 11 topics
 
+### Lenny's Podcast YouTube
+
+- **Description:** Interviews with world-class product leaders and growth experts to uncover concrete, actionable, and tactical advice to help you build, launch, and grow your own product.
+- **YouTube:** https://youtube.com/@LennysPodcast/videos
+- **Website:** https://www.lennysnewsletter.com/
+- **Cataloged:** 8 recent videos, with transcripts pending full extraction
+
 ### Boundary YouTube
 
 - **Description:** Boundary builds unbreakable agents with BAML
@@ -84,6 +94,7 @@ ai/
 |--------|---------|-------------|----------|
 | World's Fair 2026 | 60 talks | 58 (97%) | 57 |
 | Latent Space Podcast | 31 episodes | 29 (94%) | 28 |
+| Lenny's Podcast YouTube | 8 videos | pending | 0 |
 | Boundary YouTube | 5 videos | pending | 3 |
 | Nate B Jones YouTube | 24 videos | pending | 1 |
 | **Total** | **120 entries** | **87 fully transcribed + 29 pending** | **89** |

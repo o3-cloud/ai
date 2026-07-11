@@ -6,12 +6,13 @@ title: AI Knowledge Catalog
 
 # AI Knowledge Catalog
 
-A structured knowledge catalog of AI engineering resources from AI Engineer events, the Latent Space Podcast, Boundary, and Nate B Jones.
+A structured knowledge catalog of AI engineering resources from AI Engineer events, the Latent Space Podcast, Boundary, Nate B Jones, and Lenny's Podcast.
 
 ## Events
 
 * [AI Engineer World's Fair 2026](events/worlds-fair-2026/index.html) - June 29 - July 2, 2026, San Francisco. 60 talks (58 with transcripts) across 21 tracks.
 * [Latent Space Podcast](events/latent-space-podcast/index.html) - 31 episodes (29 with transcripts) from the last month.
+* [Lenny's Podcast YouTube](events/lennys-podcast/index.html) - 8 videos (transcripts pending full extraction) from the last 30 days.
 * [Boundary YouTube](events/boundary/index.html) - 5 videos (transcripts pending full extraction) from the last 30 days.
 * [Nate B Jones YouTube](events/nate-b-jones/index.html) - 24 videos (transcript capture pending) from the last 30 days.
 
