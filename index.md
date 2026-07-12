@@ -6,7 +6,7 @@ title: AI Knowledge Catalog
 
 # AI Knowledge Catalog
 
-A structured knowledge catalog of AI engineering resources from AI Engineer events, the Latent Space Podcast, Boundary, Nate B Jones, Lenny's Podcast, How I AI, Beyond the Prompt, and Aakash Gupta.
+A structured knowledge catalog of AI engineering resources from AI Engineer events, the Latent Space Podcast, Boundary, Nate B Jones, Lenny's Podcast, How I AI, Beyond the Prompt, Aakash Gupta, and Unsupervised Learning.
 
 ## Events
 
@@ -18,6 +18,7 @@ A structured knowledge catalog of AI engineering resources from AI Engineer even
 * [Aakash Gupta YouTube](events/grow-product/index.html) - 8 videos (1 transcribed, 7 pending) from the last 30 days.
 * [Boundary YouTube](events/boundary/index.html) - 5 videos (transcripts pending full extraction) from the last 30 days.
 * [Nate B Jones YouTube](events/nate-b-jones/index.html) - 24 videos (transcript capture pending) from the last 30 days.
+* [Unsupervised Learning YouTube](events/unsupervised-learning/index.html) - 11 videos (all transcribed) from the last 30 days.
 
 ## Concepts
 

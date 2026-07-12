@@ -45,7 +45,10 @@ ai/
 │   ├── lennys-podcast/                 # Lenny's Podcast YouTube channel
 │   │   ├── index.md                    # Source overview
 │   │   └── videos/                     # Video transcripts & summaries
-│   └── nate-b-jones/                   # Nate B Jones YouTube channel
+│   ├── nate-b-jones/                   # Nate B Jones YouTube channel
+│   │   ├── index.md                    # Source overview
+│   │   └── videos/                     # Video transcripts & summaries
+│   └── unsupervised-learning/           # Unsupervised Learning YouTube channel
 │       ├── index.md                    # Source overview
 │       └── videos/                     # Video transcripts & summaries
 ├── concepts/                           # Cross-event AI concepts
@@ -116,6 +119,12 @@ ai/
 - **Website:** https://natesnewsletter.substack.com
 - **Cataloged:** 24 videos from the last 30 days, with transcript capture pending due to YouTube rate limiting
 
+### Unsupervised Learning YouTube
+
+- **Description:** Conversations from Unsupervised Learning covering AI, model controls, harnesses, security, leadership, and practical operator workflows; recent uploads are preserved with transcripts for the last month.
+- **YouTube:** https://youtube.com/@unsupervised-learning/videos
+- **Cataloged:** 11 recent videos, all transcribed
+
 ### Catalog Summary
 
 | Source | Content | Transcribed | Speakers |
@@ -128,7 +137,8 @@ ai/
 | Aakash Gupta YouTube | 8 videos | pending | 0 |
 | Boundary YouTube | 5 videos | pending | 3 |
 | Nate B Jones YouTube | 24 videos | pending | 1 |
-| **Total** | **157 entries** | **88 fully transcribed + 69 pending** | **89** |
+| Unsupervised Learning YouTube | 11 videos | 11 | 0 |
+| **Total** | **168 entries** | **99 fully transcribed + 69 pending** | **89** |
 
 Plus 8 cross-event concept pages and 21 track/topic pages.
 
