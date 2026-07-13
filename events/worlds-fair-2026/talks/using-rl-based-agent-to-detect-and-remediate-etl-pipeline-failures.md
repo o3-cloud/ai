@@ -8,7 +8,6 @@ track: Data Quality
 event: AI Engineer World's Fair 2026
 date: 2026-06-30
 resource: https://www.youtube.com/watch?v=LrGCT7G_rU8
-transcript_status: pending
 tags: [talk, data-quality, anna-marie-benzon]
 timestamp: 2026-07-08T00:00:00+00:00
 ---
