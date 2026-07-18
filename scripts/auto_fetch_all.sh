@@ -76,7 +76,7 @@ for f in "$TALKS_DIR"/*.md "$EPISODES_DIR"/*.md; do
         if [ -n "$vid" ]; then
             PENDING_COUNT=$((PENDING_COUNT + 1))
             echo "  Retrying: $vid ($(basename "$f" .md))"
-            fetch_transcript "$vid" "$TMP_DIR"
+            fetch_transcript "$vid" "$TMP_DIR" || true
         fi
     fi
 done
@@ -111,7 +111,7 @@ while IFS= read -r line; do
         continue
     fi
     echo "  NEW: $vid — $title"
-    fetch_transcript "$vid" "$TMP_DIR"
+    fetch_transcript "$vid" "$TMP_DIR" || true
     NEW_WF=$((NEW_WF + 1))
 done < "$TMP_DIR/aie_latest.txt"
 
@@ -138,7 +138,7 @@ while IFS= read -r line; do
         continue
     fi
     echo "  NEW: $vid — $title"
-    fetch_transcript "$vid" "$TMP_DIR"
+    fetch_transcript "$vid" "$TMP_DIR" || true
     NEW_LS=$((NEW_LS + 1))
 done < "$TMP_DIR/ls_latest.txt"
 
